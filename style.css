@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    position: absolute;
+    width: 12vw;
+    height: 60vmin;
+    margin-top: 10vmin;
+}
+.grid {
+    border-style: solid;
+    height: 80vmin;
+    width: 70vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: auto;
+}
