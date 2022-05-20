@@ -66,9 +66,6 @@ function makeCell(i) {
     cell.style.width = `${cellWidth}%`;
     cell.style.height = `${cellWidth}%`;
     cell.addEventListener('mousedown', (e) => { // 1st click
-        // console.log(`click on test cell ${i}`);
-            // cell.style.backgroundColor = 'black';
-            // console.log(cell)
         changeColor(i, cell);
     })
     cell.addEventListener('mouseenter', e => { //hover while clicked
@@ -87,10 +84,7 @@ function makeGrid() {
 makeGrid();
 
 let cellNumberInput = document.getElementById('cellNumber')
-// console.log(cellNumberInput)
 cellNumberInput.value = 6
-// console.log(cellNumberInput.value)
-// console.log(cellNumberInput)
 
 cellNumberInput.addEventListener('onchange', e => {
     console.log(cellNumberInput)

@@ -1,64 +1,23 @@
-/* read https://carlanderson.xyz/how-to-keep-your-flexbox-square/
-to learn about sync re-sizing square box */
-
-
-.grid {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* grid-template-areas: 
-    '1 2 3'
-    '3 4 5'
-    '6 7 8'
-    ;    */
+.header {
+    text-align: center;
 }
-
-/* .grid {
-    display: flex;
-    border-style: solid;
-    flex: 1 0 auto;
-    height: auto;
-}
-
-.grid:before {
-    content: '';
-    display: block;
-    padding-top: 100%;
-} */
 
 .grid {
     outline-style: solid;
     /* height: 70vh; */
     width: 70vw;
     max-width: 100vh;
-    /* max-height: 100%; */
     margin: 0 auto;
-    /* overflow: hidden; */
-    /* width: 100vmin; */
-    /* height: 100vmin; */ 
 }
-.grid::before {
-    /* content: "";
-    display: block; */
-    /* margin-top: 100%; */
-  }
-
 
 .grid>.cell {
     float: left;
     outline-style: solid;
     outline-width: 1px;
-    /* width: 33.3333%; */
-    /* height: 33.333% */
-
 }
 
 .main {
     display: flex;
-    outline-style: solid;
-    outline-color: red;
-    /* justify-content: center; */
-    /* flex: 1 1 0; */
-    
 }
 
 .sidebar {
@@ -68,18 +27,13 @@ to learn about sync re-sizing square box */
     width: 10%;
     height: 80vh;
     margin-left: 10%;
-
-    /* text-align: center; */
 }
 
 .sidebar>div {
     display: flex;
-    /* justify-content: space-evenly; */
-    /* padding: auto; */
     background-color: rgb(170, 170, 170);
     justify-content: center; 
     align-items:center;
-    /* text-align: center; */
     flex: 1 1 ;
     width: auto;
     text-align: center;
