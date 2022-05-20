@@ -16,15 +16,25 @@
     </div>
     <div class="main">
         <div class="sidebar">
-            <button class="button1">button1</button>
-            <button class="button2">button2</button>
-            <button class="button3">button3</button>
-            <button class="button4">button4</button>
-            <button class="button5">button5</button>
-            <button class="button6">button6</button>
+            <div class="button1">
+                <div>
+                    Click Here to Set Number of Cells
+                </div>
+                <input type="number" class="input" id="cellNumber" placeholder="6" onchange="resize(this.value)" min="1" max="100">
+                    
+                </input>
+            </div> 
+            <div class="button2">Black & White</div> 
+            <div class="button3">Rainbow</div> 
+            <div class="button4">Darker</div> 
+            <div class="button5">Clear</div> 
+            <!-- <div class="button6">Clear</div>  -->
         </div>
         <div class="grid">
-            grid
+    
+        </div>
+        <div class="hidden">
+            hidden
         </div>
     </div>
 </body>
